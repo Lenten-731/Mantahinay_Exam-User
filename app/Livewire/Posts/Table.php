@@ -3,7 +3,7 @@
 namespace App\Livewire\Posts;
 
 use Livewire\Component;
-use App\Models\Posts;
+use App\Models\Post;
 
 class Table extends Component
 {

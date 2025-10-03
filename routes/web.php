@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Livewire\User\Table;
+use App\Livewire\Posts\Table;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/users', Table::class)->name('users');
+Route::get('/posts', Table::class);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
